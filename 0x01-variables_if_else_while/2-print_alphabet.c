@@ -5,10 +5,13 @@
 */
 int main(void)
 {
-char ch;
-for ($ch = 'a' ; $ch <= 'z' ; $ch++)
-{
-putchar($ch);
-}
-putchar('\n');
+char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	unsigned int i = 0;
+
+	while (i < 26)
+	{
+		putchar(alphabet[i]);
+		i++;
+	}
+	putchar ('\n');
 }
