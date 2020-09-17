@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	unsigned int i = 0;
 
 	while (i < 26)
@@ -14,4 +14,5 @@ char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 		i++;
 	}
 	putchar ('\n');
+	return (0);
 }
