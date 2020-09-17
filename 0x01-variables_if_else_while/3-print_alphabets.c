@@ -12,11 +12,10 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
 }
-
 for (chA = 'A' ; chA <= 'Z' ; chA++)
 {
 putchar(chA);
 }
-putchar (\n);
+putchar('\n');
 return (0);
 }
