@@ -5,19 +5,18 @@
  */
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	char alphabet1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	unsigned int i = 0;
+int ch;
 
-	while (i < 26)
+        clrscr();
+	for (ch= 'a'; ch<= 'z'; ch++)
 	{
-		putchar(alphabet[i]);
-		i++;
+             putchar(ch);
 	}
-	while (i < 26)
-        {
-                putchar(alphabet[i]);
-                i++;
-        }
-	putchar ('\n');
+	for (ch= 'A'; ch<= 'Z'; ch++)
+	{
+             putchar(ch);
+}
+	putchar (\n);
+
 	return (0);
+}
