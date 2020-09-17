@@ -3,21 +3,19 @@
  *main - Entry point
  *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	char alphabet1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	unsigned int i = 0;
-
-	while (i < 26)
-	{
-		putchar(alphabet[i]);
-		i++;
-	}
-	while (i < 26)
-        {
-                putchar(alphabet[i]);
-                i++;
-        }
-	putchar ('\n');
-	return (0);
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
+{
+putchar(ch);
+}
+char chA;
+for (chA = 'A' ; chA <= 'Z' ; chA++)
+{
+putchar(chA);
+}
+putchar (\n);
+return (0);
+}
