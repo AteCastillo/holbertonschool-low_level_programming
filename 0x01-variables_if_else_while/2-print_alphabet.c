@@ -5,11 +5,14 @@
 */
 int main(void)
 {
-char ch;
-	for (ch = 'a' ; ch <= 'z' ; ch++)
-	{	
-		putchar(ch);
+char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	unsigned int i = 0;
+
+	while (i < 26)
+	{
+		putchar(alphabet[i]);
+		i++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
