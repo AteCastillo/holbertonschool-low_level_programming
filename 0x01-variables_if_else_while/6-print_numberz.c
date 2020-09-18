@@ -6,12 +6,12 @@
 
 int main(void)
 {
-        int nu;
+	int nu;
 
-        for (nu = '0' ; nu <= '9' ; nu++)
-        {
-                putchar(nu);
-        }
-        putchar('\n');
-        return (0);
+	for (nu = '0' ; nu <= '9' ; nu++)
+	{
+		putchar(nu);
+	}
+	putchar('\n');
+	return (0);
 }
