@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
-
+ * main - Entry point
  *Return: Always 0 (Success)
 */
 
 int main(void)
 {
-        int nu;
+	char nu;
 
-        for (nu = '0' ; nu <= '9' ; nu++)
-        {
-                putchar(nu);
-        }
-        putchar('\n');
-        return (0);
+	for (nu = '0' ; nu <= '9' ; nu++)
+	{
+		putchar(nu);
+	}
+	putchar('\n');
+	return (0);
 }
