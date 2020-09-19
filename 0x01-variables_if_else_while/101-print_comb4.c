@@ -19,7 +19,7 @@ int main(void)
 				{
 					continue;
 				}
-				if (nu == tri || tri > nu)
+				if (nu == tri || nu > tri)
 				{
 					continue;
 				}
