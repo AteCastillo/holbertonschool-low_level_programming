@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+
 	char ch, nu;
 
 	for (ch = '0' ; ch <= '9' ; ch++)
