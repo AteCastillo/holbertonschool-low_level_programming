@@ -17,13 +17,13 @@ int main(void)
 			{
 				continue;
 			}
-				putchar(ch);
-				putchar(nu);
-			       	if (ch != '8' || nu != '9')
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			putchar(ch);
+			putchar(nu);
+			if (ch != '8' || nu != '9')
+			{
+			putchar(',');
+			putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
