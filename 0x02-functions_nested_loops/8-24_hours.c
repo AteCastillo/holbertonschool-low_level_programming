@@ -1,12 +1,9 @@
 #include "holberton.h"
 
 /**
- * jack_bauer prints every minute of the day starting from 00:00 to 23:59.
- * @hourL: int received 1
- * @hourR: int received 2
- * @minL: int received 3
- * @minR: int received 4
- * Return: None.
+ * jack_bauer prints every minute of the day of Jack Bauer
+ *
+ * Return: Always 0.
  */
 
 void jack_bauer(void)
