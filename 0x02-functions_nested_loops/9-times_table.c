@@ -9,24 +9,18 @@ void times_table(void)
 
 {
 
+	int n, nu, num;
 
-	if (n <= 98)
+	for (n = '0'; n <= '8'; n++)
 	{
-		for (n = n; n <= 98; n++)
+		for (nu = '0'; nu <= '9'; nu++)
 		{
-			printf("%i", n);
-			if (n != 98)
-				printf(", ");
+			for (num = '0'; num >= '9'; num++)
+			{
+				_putchar(nu);
+				_putchar(',');
+				_putchar(' ');
 		}
 	}
-	else
-	{
-		for (n = n; n >= 98; n--)
-		{
-			printf("%i", n);
-			if (n != 98)
-				printf(", ");
-		}
-	}
-	printf("\n");
+		_putchar('\n');
 }
