@@ -2,9 +2,9 @@
 
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * add - adds two integers and returns the result
+ * @n: int received
+ * Return: the result.
  */
 
 int add(int a, int b)
