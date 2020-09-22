@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _isalpha to show a character when is in the alphabet
+ * _isalpha - show what char is alphabetic
  * @c: the char received
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 
 int _isalpha(int c)
