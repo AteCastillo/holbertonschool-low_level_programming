@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_sign returns the sign of a number
- * @n int received
- * Return: Always 0 (Succes)
+ *print_sign - return the sign of  a number
+ *@n: int received
+ * Return: Always 0 (Success)
  */
 
 int print_sign(int n)
