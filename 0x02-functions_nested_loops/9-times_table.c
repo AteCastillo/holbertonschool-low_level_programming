@@ -2,23 +2,33 @@
 /**
  * times_table - Show time tables
  *
- * Return: Always 0 (Success)
+ * Return: None
  */
 void times_table(void)
 {
+	int i, j, res, sig;
 
-	int n, nu, num;
-
-	for (n = '0'; n <= '8'; n++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (nu = '0'; nu <= '9'; nu++)
+		for (j = 48; j <= 57; j++)
 		{
-			for (num = '0'; num >= '9'; num++)
+			res = (i - 48) * (j - 48);
+			sig = (i - 48) * ((j + 1) - 48);
+			if (res > 9)
 			{
-				_putchar(nu);
+				_putchar((res / 10) + 48);
+				_putchar((res % 10) + 48);
+			}
+			else
+				_putchar(res + 48);
+			if (j != 57)
+			{
 				_putchar(',');
+				if (res <= 9 && sig <= 9 && j <= 57)
+					_putchar(' ');
 				_putchar(' ');
+			}
 		}
+		_putchar(10);
 	}
-		_putchar('\n');
 }
