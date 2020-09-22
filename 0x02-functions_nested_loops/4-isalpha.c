@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _isalpha to show a character when is in the alphabet
+ * @c: the char received
  * Return: Always 0.
  */
 

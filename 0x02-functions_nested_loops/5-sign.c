@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * print_sign to print the sign of a number
+ * @n int received
  * Return: Always 0.
  */
 
