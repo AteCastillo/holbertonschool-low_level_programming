@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
- * times_table - prints the 9 times table
+ * times_table - Show time tables
  *
- * Return: None.
+ * Return: Always 0 (Success)
  */
-
 void times_table(void)
-
 {
 
 	int n, nu, num;
