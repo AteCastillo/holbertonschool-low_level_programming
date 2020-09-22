@@ -6,14 +6,16 @@
  * Return: last digit.
  */
 
-int print_last_digit(int n)
+int print_last_digit(int r)
 {
 	int lastd;
 
-	lastd = n % 10;
-	if (n > 0 && n < 0)
+	lastd = r % 10;
+	if (r <  0)
 	{
-	_putchar(lastd);
+		lastd = lastd * (-1);
 	}
+	_putchar ('0' + lastd);
+
 	return (lastd);
 }
