@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * int _isupper - check for uppercase characters
- * @c: char received
+ * int_isupper - check for uppercase characters
+ * @c: int received
  * Return: Always 0.
  */
 
