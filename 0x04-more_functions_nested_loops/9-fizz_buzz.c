@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -30,6 +31,6 @@ int main(void)
 		{
 		printf("%d ", nu);
 		}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
