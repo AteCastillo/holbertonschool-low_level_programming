@@ -23,13 +23,12 @@ int main(void)
 		{
 		printf("Fizz ");
 		}
-		else if (nu == 100)
-		{
-			printf("Buzz");
-
 		else if (nu % 5 == 0)
 		{
-			printf("Buzz ");
+			if (nu == 100)
+				printf("Buzz");
+				else
+					printf("Buzz ");
 		}
 		else
 		{
