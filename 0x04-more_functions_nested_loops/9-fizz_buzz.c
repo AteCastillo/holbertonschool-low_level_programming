@@ -23,6 +23,10 @@ int main(void)
 		{
 		printf("Fizz ");
 		}
+		else if (a == 100)
+		{
+			printf("Buzz");
+
 		else if (nu % 5 == 0)
 		{
 			printf("Buzz ");
