@@ -23,7 +23,7 @@ int main(void)
 		{
 		printf("Fizz ");
 		}
-		else if (a == 100)
+		else if (nu == 100)
 		{
 			printf("Buzz");
 
