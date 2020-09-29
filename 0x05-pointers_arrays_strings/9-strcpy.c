@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *_strcpy - a function that copies the string pointed to by src
+ * _strcpy - a function that copies the string pointed to by src
  * @dest: var received
  * @src: var received
  * Return: Always 0.
