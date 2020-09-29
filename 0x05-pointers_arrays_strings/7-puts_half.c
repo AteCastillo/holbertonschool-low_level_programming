@@ -16,7 +16,7 @@ void puts_half(char *str)
 	int mid; /* a var that shows the middle of the string */
 
 
-	for (x = 0; str[x]; x++)
+	for (x = 0; str[x] != '\0' ; x++)
 
 		if (x % 2 != 0)
 	{
