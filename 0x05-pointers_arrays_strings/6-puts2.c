@@ -19,7 +19,7 @@ void puts2(char *str)
 		}
 	}
 
-/**
+/*
  *	while (str[n] != '\0')
  *	{
  *		n++;
@@ -30,7 +30,7 @@ void puts2(char *str)
  *		_putchar(str[n]);
  *	}
  *	}
-*/
+ */
 	_putchar('\n');
 
 }
