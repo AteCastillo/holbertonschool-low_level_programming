@@ -11,12 +11,13 @@ void print_rev(char *s)
 {
 	int n; /* n es hasta donde va la variable */
 
-	while (*(s + n) > '\0')
+	while (*(s + n) != '\0')
 	{
 		n++;
 			}
+	s--;
 
-	while (n >= 0)
+	while (n > 0)
 	{
 		{
 			_putchar(*(s+n));
