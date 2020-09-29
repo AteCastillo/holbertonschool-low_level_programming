@@ -2,7 +2,7 @@
 
 /**
  * _puts - prints a string to the stdout
- *
+ * @str: var received
  * Return: None.
  */
 
