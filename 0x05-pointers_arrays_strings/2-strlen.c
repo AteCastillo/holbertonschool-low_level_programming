@@ -2,7 +2,7 @@
 
 /**
  * _strlen - function that returns the length of a string
- *
+ * @s: var received
  * Return: Always 0.
  */
 
