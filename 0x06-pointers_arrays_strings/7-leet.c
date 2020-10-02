@@ -10,6 +10,7 @@
 char *leet(char *s)
 {
 	int n, x;
+
 	char letras[] = "aAeEoOtTlL";
 	char num[] = "4433007711";
 
