@@ -11,26 +11,28 @@ char *cap_string(char *s)
 
 {
 
-	int n, x;
+		int x;
 
-
-	for (n = 0; s[n] != '\0'; n++)
+	for (x = 0; str[x] != '\0'; x++)
 	{
-		x = n - 1;
-
-		if
-		(
-		(s[n] >= 97 && s[n] <= 122) &&
-		(
-		s[x] == 32 || s[x] == 33 ||
-		s[x] == 34 || s[x] == 9 ||
-		s[x] == 44 || s[x] == 40 ||
-		s[x] == 41 || s[x] == 123  || s[x] == 125 ||  s[x] == 46
-		)
-		)
+		if (str[0] >= 'a' && str[0] <= 'z')
 		{
-			s[n] = s[n] - 32;
+			str[0] = str[0] - 32;
+		}
+		if (
+			str[x] == ',' || str[x] == ';' || str[x] == '.' ||
+			str[x] == '!' || str[x] == '?' || str[x] == '"' ||
+			str[x] == '(' || str[x] == ')' || str[x] == '{' ||
+			str[x] == '}' || str[x] == ' ' || str[x] == '\n' ||
+			str[x] == '\t'
+			)
+		{
+			if (str[x + 1] >= 'a' && str[x + 1] <= 'z')
+			{
+				str[x + 1] = str[x + 1] - 32;
 			}
+		}
+	}
 	}
 	return (s);
 }
