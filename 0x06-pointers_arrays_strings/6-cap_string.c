@@ -3,11 +3,11 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
- * @s: var received
+ * @str: var received
  * Return: string.
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 
 {
 
