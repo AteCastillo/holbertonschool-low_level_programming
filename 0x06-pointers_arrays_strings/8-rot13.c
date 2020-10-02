@@ -2,12 +2,12 @@
 
 
 /**
- * leet - check the code for Holberton School students.
+ * rot13 - check the code for Holberton School students.
  * @s: string
  * Return: Always 0.
  */
 
-char *leet(char *s)
+char *rot13(char *)
 {
 	int n, x;
 	char abc[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
