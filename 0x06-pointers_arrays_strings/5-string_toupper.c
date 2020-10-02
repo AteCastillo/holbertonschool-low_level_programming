@@ -2,9 +2,9 @@
 
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * string_toupper - changes all lowercase letters of a string to uppercase
+ * @s: var received
+ * Return: string.
  */
 
 char *string_toupper(char *s)
@@ -20,5 +20,5 @@ char *string_toupper(char *s)
 			s[n] = s[n] - 32;
 		}
 	}
-	return(s);
+	return (s);
 }
