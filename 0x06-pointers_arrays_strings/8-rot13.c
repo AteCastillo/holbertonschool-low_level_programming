@@ -15,7 +15,7 @@ char *rot13(char *s)
 
 	for(n = 0; s[n] != '\0'; n++)
 	{
-		for(x = 0; abc[x] != '\0'; x++)
+		for(x = 0; x <= 52; x++)
 		{
 			if (abc2[x] == s[n])
 			{
