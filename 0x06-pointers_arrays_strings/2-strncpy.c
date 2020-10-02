@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
-	for ( ; i < n; i++) /* to add the null */
+	for ( ; i < n; i++) /* to add the null zero at the end of the string */
 		dest[i] = '\0';
 
 	return (dest);
