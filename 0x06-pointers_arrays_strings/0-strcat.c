@@ -21,6 +21,12 @@ char *_strcat(char *dest, char *src)
 		dest[n] = src[temp];
 	}
 	dest[n] = '\0'; /*to add null zero */
-
+	/* for (; src[i] != '\0'; n++)
+	{
+		dest[n] = src[n];
+		}
+	n++ 
+	another way to do it
+	*/
 	return (dest);
 }
