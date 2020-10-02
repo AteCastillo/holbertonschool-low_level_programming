@@ -3,25 +3,25 @@
 
 /**
  * leet - check the code for Holberton School students.
- * @str: string
+ * @s: string
  * Return: Always 0.
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-	int x, z;
-	char az[5] = "aeotl";
-	char num[5] = "43071";
+	int n, x;
+	char letras[] = "aAeEoOtTlL";
+	char num[] = "4433007711";
 
-	for (x = 0; str[x] != '\0'; x++)
+	for(n = 0; s[n] != '\0'; n++)
 	{
-		for (z = 0; az[z] != '\0'; z++)
+		(x = 0; letras[x] != '\0'; x++)
 		{
-			if (az[z] == str[x] || (az[z] - 32) == str[x])
+			if (letras[x] == s[n])
 			{
-				str[x] = num[z];
+				s[n] = num[x];
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
