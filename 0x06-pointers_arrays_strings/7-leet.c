@@ -15,7 +15,7 @@ char *leet(char *s)
 
 	for(n = 0; s[n] != '\0'; n++)
 	{
-		(x = 0; letras[x] != '\0'; x++)
+		for(x = 0; letras[x] != '\0'; x++)
 		{
 			if (letras[x] == s[n])
 			{
