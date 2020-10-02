@@ -26,7 +26,7 @@ char *_strcat(char *dest, char *src)
 		dest[n] = src[n];
 		}
 	n++ 
-	another way to do it
+	another way to do it but using the first for too
 	*/
 	return (dest);
 }
