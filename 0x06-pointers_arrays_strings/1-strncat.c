@@ -28,6 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 		dest[lenght + i] = src[i + 0];
 	}
 		dest[lenght + i] = '\0';
-
+	/* ver Git de MS */
 	return (dest);
 }
