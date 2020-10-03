@@ -22,13 +22,6 @@ char *_strcat(char *dest, char *src)
 		dest[n + temp] = src[temp];
 		dest[n + temp] = '\0';
 	}
-	 /*to add null zero */
-	/* for (; src[i] != '\0'; n++)
-	{
-		dest[n] = src[n];
-		}
-	n++ 
-	another way to do it but using the first for too
-	*/
+	 
 	return (dest);
 }
