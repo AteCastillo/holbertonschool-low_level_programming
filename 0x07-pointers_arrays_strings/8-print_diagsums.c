@@ -11,16 +11,16 @@ void print_diagsums(int *a, int size)
 
 {
 
-	int row, column, sum1, sum2;
+	int i, sum1 = 0, sum2 = 0;
 
-	for (row = 0, column = 0; row < size ; row++, column++)
+	for (i = 0; i < size * size; i = i + (size + 1))
         {
-		sum1 += a[row][column];
-	}
+		sum1 += a[i];
+	} /*definieron un puntero y hace que sea de una dimensión el array*/
 
-	for (column = size - 1, row = 0; row < size; row++, column--)
-	{
-		sum2 += a[row][column];
+	for (i = size - 1; i < size * size - 1; i = i + (size - 1))
+	{ /*empieza de arriba hacia abajo */
+		sum2 += a[i];
 	}
 	printf("%d, %d\n", sum1, sum2);
 
