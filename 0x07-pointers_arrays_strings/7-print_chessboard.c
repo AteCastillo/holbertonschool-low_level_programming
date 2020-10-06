@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strchr - a function that locates a character in a string
+ * print_chessboard - a function that locates a character in a string
  * @a: pointer
  * Return:the pointer to char or 0 if dont have coincidence
  */
