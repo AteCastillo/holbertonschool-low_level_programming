@@ -10,9 +10,9 @@
 void print_diagsums(int *a, int size)
 
 {
-	int row, column, sum = 0 ;
-
-/*	for (row = 0; a[row] < size ; row++)
+/*
+ *	int row, column, sum = 0;
+ *	for (row = 0; a[row] < size ; row++)
  *        {
  *		for (column = 0; a[column]; column++)
  *		{
