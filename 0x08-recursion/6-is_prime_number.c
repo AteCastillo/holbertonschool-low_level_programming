@@ -18,7 +18,7 @@ int is_prime_number(int n)
 /**
  * function - prime
  * @n: number
- * @i: incrementor
+ * @b: incrementor
  * Return: -1;
  */
 
