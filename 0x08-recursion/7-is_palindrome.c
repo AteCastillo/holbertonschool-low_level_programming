@@ -35,6 +35,13 @@ int lenght(char *s)
 	return (1 + lenght(s + 1));
 }
 
+/**
+* roberto - check the code for Holberton School students.
+* @str: pointer
+* @inicio: var
+* @fin: var
+* Return: Always 0.
+*/
 
 int roberto(char *str, int inicio, int fin)
 {
