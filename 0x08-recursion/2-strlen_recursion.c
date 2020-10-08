@@ -18,6 +18,6 @@ int _strlen_recursion(char *s)
 	}
 
 	i = _strlen_recursion(s + 1);
-	i++;
+	i++; /* esto hace a la bajada, luego de que la función alcanza el null */
 	return (i);
 }
