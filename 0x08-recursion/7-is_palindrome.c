@@ -40,7 +40,7 @@ int roberto(char *str, int inicio, int fin)
 {
 
 	if (inicio < fin && str[inicio] == str[fin])
-                return (roberto(str, inicio + 1, fin - 1));
+		return (roberto(str, inicio + 1, fin - 1));
 
 	if (inicio >= fin)
 		return (1);
