@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *_sqrt_recursion - blank
- * @n: blank
- * Return: balnk
+ *_sqrt_recursion - square root
+ * @n: Var received
+ * Return: different
  */
 
 int _sqrt_recursion(int n)
@@ -19,9 +19,9 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * function - blank
+ * function - to multiply
  * @n: number
- * @i: incrementor
+ * @i: multiplo
  * Return: -1;
  */
 
