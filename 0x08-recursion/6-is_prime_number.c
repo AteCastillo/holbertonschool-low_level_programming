@@ -27,7 +27,8 @@ int function(int n, int b)
 	if (b == 1)
 		return (1);
 	if (n % b == 0)
-		return (function(n, b - 1));
+		return (0);
+	return (function(n, b - 1));
 }
 
 /*
