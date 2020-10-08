@@ -9,7 +9,6 @@
 int is_prime_number(int n)
 
 {
-	int b = 2;
 	if (n <= 1)
 		return (0);
 	else
@@ -23,22 +22,18 @@ int is_prime_number(int n)
  * Return: -1;
  */
 
-int function(int n, int i)
+int function(int n, int b)
 {
 	if (b == 1)
 		return (1);
 	if (n % b == 0)
-		return(function(n, b-1));
-}	
+		return (function(n, b - 1));
+}
+
 /*
-* if(i %2 != 0 && i %3 != 0 && i %5 != 0 && i %7 != 0 || i == 2 || i == 3 || i == 5 || i == 7)
+* if(i %2 != 0 && i %3 != 0 && i %5 != 0 && i %7 != 0 || i == 2 || i == 3
+* || i == 5 || i == 7)
 *			return (function(n, i + 1));
 *	else
 *		return (0);
 */
-
-
-
-
-
-
