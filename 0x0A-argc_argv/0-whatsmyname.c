@@ -4,7 +4,7 @@
  * main - function
  * @argc: argument
  * @argv: array
- * return: Always 0.
+ * return: 0.
  */
 
 int main(int argc, char *argv[])
