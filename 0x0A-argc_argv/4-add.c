@@ -1,39 +1,39 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 
 /**
- * main - prints the result of a multiplication of two arguments
+ * main - prints the result of a sum
  * @argc: count the # of argument supplied to the program
  * @argv: Array of pointers to the strings which are the arguments
- * Return: none
+ * Return: always 0.
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum;
+	int i, j;
+	int sum = 0;
+	char c;
 
-	sum = 0;
-
-	if (argc == 1)
+	if (argc < 1)
 	{
 		printf("0\n");
-		return (0);
+
 	}
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(*argv[i]) != 0)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			sum += atoi(argv[i]);
+			c = argv[i][j];
+			if (isdigit(c) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum += atoi(argv[i]);
+
 	}
 	printf("%d\n", sum);
 	return (0);
