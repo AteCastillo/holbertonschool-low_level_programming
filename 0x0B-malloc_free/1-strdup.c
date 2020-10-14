@@ -18,8 +18,9 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (i = 0; str[i] != '\0'; i++) /*to count the string and give */
-					   /*  the number to malloc */
-	s = (char *) malloc(i * sizeof(char));
+	{					   /*  the number to malloc */
+	}
+	s = (char *) malloc(i * sizeof(char) + 1);
 
 	if (s == NULL)
 		return (NULL);
