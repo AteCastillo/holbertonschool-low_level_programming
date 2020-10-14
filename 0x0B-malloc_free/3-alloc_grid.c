@@ -32,7 +32,7 @@ int **alloc_grid(int width, int height)
 		{
 			if (array[i] == NULL)
 			{
-				for (; i > 0; i--) /*it starts at the end of */
+				for (; i >= 0; i--)/*it starts at the end of */
 				/* the array bec i is at the end in the for */
 				{
 					free(array[i]);
