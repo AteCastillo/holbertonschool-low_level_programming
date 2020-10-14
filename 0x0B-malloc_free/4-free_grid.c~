@@ -1,0 +1,29 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * free_grid - prints a grid of integers
+ * @grid: the address of the two dimensional grid
+ * @height: height of the grid
+ *
+ * Return: Nothing.
+ */
+
+void free_grid(int **grid, int height)
+
+{
+	int width;
+	int j, k;
+
+	for (j = 0; grid[j] < height; j++)
+	{
+		free(grid);
+		for (k = 0; grid[k] < width; k++)
+		{
+
+			free(grid);
+		}
+	}
+
+}
