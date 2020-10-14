@@ -14,7 +14,8 @@
 int **alloc_grid(int width, int height)
 {
 	int **array;
-	int i;
+	int i; /* go through array height (rows) */
+	int j, k; /* to inizialice each element*/
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
@@ -39,8 +40,16 @@ int **alloc_grid(int width, int height)
 				return (NULL);
 			}
 		}
+
 	}
 
+	for (j = 0; j < height; j++)
+	{
+		for (k = 0; k < height; k++)
+		{
+			array[j][k] = 0;
+		}
+	}
 
 	return (array);
 }
