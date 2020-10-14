@@ -16,9 +16,10 @@ char *str_concat(char *s1, char *s2)
 	int i, n; /* to count every string */
 	int j, k; /*vars to concatenate */
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	for (i = 0; s1[i] != 0; i++)
 	{
 	}
@@ -31,14 +32,14 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (0);
 
- 	for (j = 0; s1[j] != '\0'; j++)
+	for (j = 0; s1[j] != '\0'; j++)
 	{
 		s[j] = s1[j];
 	}
 
 	for (k = 0; s2[k] != '\0'; k++)
 	{
-		s[j+k] = s2[k];
+		s[j + k] = s2[k];
 	}
 	return (s);
 }
