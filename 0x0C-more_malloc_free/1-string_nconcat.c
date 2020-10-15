@@ -14,7 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j; /* to count every array */
 	char *s;
-	unsigned int x, y;
+	unsigned int x, y; /* to concatenate */
 
 	if (s1 == NULL)
 		s1 = "";
@@ -29,7 +29,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s = malloc(sizeof(char) * (i + j) + 1);
 	if (s == NULL)
 		return (NULL);
-
 	for (x = 0; s1[x]; x++)
 	{
 		s[x] = s1[x];
@@ -38,5 +37,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s[x + y] = s2[y];
 	}
+	s[x + y]; /* to add null zero at the end manually */
 	return (s);
 }
