@@ -37,6 +37,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s[x + y] = s2[y];
 	}
-	s[x + y]; /* to add null zero at the end manually */
+	s[x + y] = '\0'; /* to add null zero at the end manually */
 	return (s);
 }
