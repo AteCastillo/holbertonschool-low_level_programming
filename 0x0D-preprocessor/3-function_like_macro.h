@@ -1,3 +1,4 @@
-#ifndef ABS(N)
-#define ABS(N) ((N < 0) ? (-N) : (N))
+#ifndef ATENEA
+#define ATENEA
+#define ABS(n) ((n < 0) ? (-n) : (n))
 #endif
