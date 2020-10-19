@@ -2,7 +2,7 @@
 #define DOG
 
 /**
- * struct - check the code for Holberton School students.
+ * struct dog - check the code for Holberton School students.
  * @name: string for name
  * @age: int for age
  * @owner: string for owner
