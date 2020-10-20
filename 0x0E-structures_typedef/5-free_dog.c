@@ -4,7 +4,7 @@
 
 /**
  * free_dog - check the code for Holberton School students.
- *
+ * @d: pointer
  * Return: Always 0.
  */
 
