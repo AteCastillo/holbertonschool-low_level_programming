@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		printf("%02x ", p[i] - 1);
 		i++;
 	}
-	i++;
+
 	printf("%02x\n", p[i]);
 	return (0);
 }
