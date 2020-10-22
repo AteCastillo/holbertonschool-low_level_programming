@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 	int i = 0;
 
-	while (i < (atoi(argv[1]) -1))
+	while (i < (atoi(argv[1]) - 1))
 	{
 		printf("%02x ", p[i]);
 		i++;
