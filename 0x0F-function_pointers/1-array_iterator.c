@@ -1,12 +1,11 @@
-#include <stdio.h>
 #include "function_pointers.h"
 
 /**
- * array_iterator - prints an integer
- * @array: the integer to print
- * @size: size
- * @action: pointer to function
- * Return: Nothing.
+ * array_iterator - Function that prints arrays
+ * @array: Array to print
+ * @size: Size of array
+ * @action: Pointer to function
+ * Return: Nothing
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -14,12 +13,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t n;
 
-	if (array == NULL)
+	if (array == NULL || action == NULL)
 		return;
-
-	if (action == NULL)
-		return;
-
 	for (n = 0; n < size; n++)
-		(*action)(array[n]);
+		action(array[n]);
 }
