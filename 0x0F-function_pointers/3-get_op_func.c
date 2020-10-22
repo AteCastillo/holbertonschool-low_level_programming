@@ -12,21 +12,8 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-<<<<<<< HEAD
-	op_t ops[] = {
-=======
-  op_t ops[] = {
-        {"+", op_add},
-        {"-", op_sub},
-        {"*", op_mul},
-        {"/", op_div},
-        {"%", op_mod},
-        {NULL, NULL}
-    };
-    int i = 0;
-  
->>>>>>> 991e1d1d7ecdf5962464b399b3d1a3a79ec569e9
 
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
