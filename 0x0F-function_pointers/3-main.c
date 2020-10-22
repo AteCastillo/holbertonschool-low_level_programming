@@ -2,16 +2,17 @@
 #include "3-calc.h"
 
 /**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ * main - Struct op
+ * @argc: counter
+ * @argv: array
+ * Return: int
  */
 
 
 int main(int argc, char *argv[])
 {
 	int num1, num2;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -26,10 +27,10 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	if ((argv[2] == / || argv[2] == %) && (argv[3] == 0))
+	if ((argv[2] == / || argv[2] == %) &&(argv[3] == 0))
 	{
 		printf("Error\n");
-                exit(99);
+		exit(99);
 	}
 
 	printf("%d\n", (*get_op_func)((argv[2]), num1, num2);

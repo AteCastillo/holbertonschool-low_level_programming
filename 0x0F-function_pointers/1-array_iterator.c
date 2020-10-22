@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * print_elem - prints an integer
+ * array_iterator - prints an integer
  * @array: the integer to print
  * @size: size
  * @action: pointer to function
@@ -13,9 +13,10 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 {
 	size_t n;
+
 	if (array == NULL)
 		return;
-	for (n = 0; n < size; n++)
-		(*action)(array[n]);
 
+	for (n = 0; n < (int)size; n++)
+		(*action)(array[n]);
 }
