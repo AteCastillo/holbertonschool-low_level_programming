@@ -22,16 +22,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 	return;
 	}
-	for (i = 0; i < n - 1; i++)
+	for (i = 0; i < n - 1 && separator != NULL; i++)
 	{
-		if (separator == NULL)
+		/*if (separator == NULL)
 		{
 			printf("%d", va_arg(newlist, int));
 		}
-		else
+		else */
 			printf("%d%s", va_arg(newlist, int), separator);
 	}
-	printf("%d", va_arg(newlist, int));
+	if (separator != NULL)
+		printf("%d", va_arg(newlist, int));
 	va_end(newlist);
 	printf("\n");
 }
