@@ -20,18 +20,22 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(newlist, n);
 	if (n == 0)
 	{
-	return;
+		printf("\n");
+		return;
 	}
 
 	if (separator != NULL)
 	{
 	for (i = 0; i < n - 1; i++)
 	{
+		if (separator == NULL)
+			printf("%d", va_arg(newlist, int));
+		else
 		printf("%d%s", va_arg(newlist, int), separator);
 	}
-	printf("%d", va_arg(newlist, int));
+	printf("%d\n", va_arg(newlist, int));
 
 	}
 	va_end(newlist);
-	printf("\n");
+
 }
