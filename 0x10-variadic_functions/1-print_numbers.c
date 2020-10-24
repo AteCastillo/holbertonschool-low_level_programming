@@ -31,6 +31,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 			printf("%d%s", va_arg(newlist, int), separator);
 	}
-	printf ("%d\n", va_arg(newlist, int));
+	printf("%d", va_arg(newlist, int));
 	va_end(newlist);
+	printf("\n");
 }
