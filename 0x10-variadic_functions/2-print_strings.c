@@ -16,12 +16,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 	va_list newlist;
 
+	va_start(newlist, n);
+	if (n == 0)
+	{
+		printf("\n");
+		return;
+	}
 	if (separator == NULL)
 	{
 		separator = "";
 	}
-
-	va_start(newlist, n);
 
 	for (i = 0; i < n - 1; i++)
 	{
