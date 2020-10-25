@@ -9,7 +9,7 @@
  */
 typedef struct op
 {
-	char *s;
+	char *str;
 	void (*f)();
 } op_t;
 

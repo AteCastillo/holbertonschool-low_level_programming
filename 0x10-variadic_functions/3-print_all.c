@@ -6,84 +6,102 @@
 
 /**
  * print_char - print
- * @n: char received
+ * @s: char received
+ * @newlist: list
  * Return: None
  */
 
-void print_char(char n)
-
+void print_char(char *s, va_list newlist)
 {
-	printf("%c", n);
+	printf("%s%c", s, va_arg(newlist, int));
 }
 
 /**
  * print_int - print int
- * @n: The operator
+ * @s: The operator
+ * @newlist: list
  * Return: None
  */
 
-void print_int(int n)
-
+void print_int(char *s, va_list newlist)
 {
-        printf("%i", n);
+	printf("%s%i", s, va_arg(newlist, int));
 }
-
 
 /**
  * print_string - check the code for Holberton School students.
- * @n: string
+ * @s: string
+ * @newlist: list
  * Return: None.
  */
-void print_string(char *n)
+void print_string(char *s, va_list newlist)
 
 {
-        printf("%s", n);
+	char *string = va_arg(newlist, char *);
+
+	if (string == NULL)
+	{
+		string = "(nil)";
+	}
+	printf("%s%s", s, string);
 }
 
 /**
  * print_float - check the code for Holberton School students.
- * @n: float
+ * @s: float
+ * @newlist: list
  * Return: None.
  */
 
-void print_float(float n)
-
+void print_float(char *s, va_list newlist)
 {
-        printf("%f", n);
+	printf("%s%f", s, va_arg(newlist, double));
 }
-
 
 /**
  * print_all - check the code for Holberton School students.
- * @char: char
  * @format: constant
  * Return: Always 0.
  */
 
 void print_all(const char * const format, ...)
 {
-	char *s;
-	int i;
+	char *s = "";
+	int i = 0;
+	int j = 0;
 	op_t new[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"s", print_string},
 		{"f", print_float},
 		{NULL, NULL}
-	}
+	};
 
 	va_list newlist;
-	va_start(newlist, 4)
-		while (i = 0, i < 4;)
 
-
-
-
+	va_start(newlist, format);
+	/*printf("fueradetodo"); */
+	while (format && format[i])
+	{
+		/*printf("while1"); */
+		while (j < 4)
+		{
+			/*printf("while2");*/
+			if (format[i] == new[j].str[0])
+			{
+				/*printf("if1");*/
+				new[j].f(s, newlist);
+				{
+					s = ", ";
+					break;
+				}
+			}
+			j++;
+		}
+		i++;
+		j = 0;
+	}
+	va_end(newlist);
+	printf("\n");
 
 }
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
