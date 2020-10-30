@@ -18,6 +18,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (newtail == NULL)
 		return (NULL);
 	if (str == NULL)
+	{
+		free(newtail);
 		return (0);
 	newtail->str = strdup(str);
 
@@ -25,20 +27,16 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 	}
 	newtail->len = count;
-
-
 	if (*head == NULL)
 	{
 		*head = newtail;
 		return (newtail);
 	}
 
-	while (last->next != '\0')
+	while (last->next != NULL)
 	{
 		last = last->next;
 	}
 	last->next = newtail;
-
-
 	return (newtail);
 }
