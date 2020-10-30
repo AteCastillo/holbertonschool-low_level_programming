@@ -24,9 +24,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (count = 0; str[count] != '\0'; str++)
 	{
 	}
-	last = NULL;
 	newtail->len = count;
-	newtail->next = NULL;
+
 
 	if (*head == NULL)
 	{
@@ -39,7 +38,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		last = last->next;
 	}
 	last->next = newtail;
-	}
 
-	return (*head);
+
+	return (newtail);
 }
