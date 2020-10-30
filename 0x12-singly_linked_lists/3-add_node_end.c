@@ -1,47 +1,59 @@
 #include "lists.h"
 
 /**
- * add_node_end - check the code for Holberton School students.
+ * _strlen - length of a string
+ * @s: parameter
+ *
+ * Return: length
+ */
+
+int _strlen(const char *s)
+
+{
+	int letras;
+
+	letras = 0;
+
+	while (*s != '\0')
+	{
+		letras++;
+		s++;
+	}
+	return (letras);
+}
+
+/**
+ * add_node_end - inserts node at the end.
  * @head: pointer to pointer
- * @str: char received
- * Return: Always 0.
+ * @str: string
+ *
+ * Return: adress of new element.
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
+	list_t *new = NULL;
+	list_t *aux = *head;
 
-	list_t *newtail = NULL;
-	int count;
-	list_t *last = *head;
-
-	if (head == NULL || str == NULL)
-		return (NULL);
-
-	newtail = malloc(sizeof(list_t));
-	if (newtail == NULL)
-		return (NULL);
-	newtail->str = strdup(str);
-	/*if (newtail->str == NULL)
+	new = (list_t *) malloc(sizeof(list_t));
+	if (new == NULL)
 	{
-		free(newtail);
-		return (0);
-		} */
-	for (count = 0; str[count] != '\0'; str++)
-	{
+		return (NULL);
 	}
-
-	newtail->len = count;
-	newtail->next = NULL;
+	new->str = strdup(str);
+	new->len = _strlen(str);
+	new->next = NULL;
 	if (*head == NULL)
 	{
-		*head = newtail;
-		return (newtail);
+		*head = new;
 	}
-
-	while (last->next != NULL)
+	else
 	{
-		last = last->next;
+		while (aux->next)
+		{
+			aux = aux->next;
+		}
+		aux->next = new;
 	}
-	last->next = newtail;
-	return (newtail);
+	return (new);
 }
