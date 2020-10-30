@@ -35,3 +35,8 @@ Return: the address of the new element, or NULL if it failed
 str needs to be duplicated
 You are allowed to use strdup
 4. Write a function that frees a list_t list.
+6. Write a 64-bit program in assembly that prints Hello, Holberton,
+followed by a new line.
+You are only allowed to use the printf function
+You are not allowed to use interrupts
+Your program will be compiled using nasm and gcc:
