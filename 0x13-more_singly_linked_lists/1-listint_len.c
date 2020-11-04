@@ -8,7 +8,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int count; /* to count the number of elements in the list */
+	int count = 0; /* to count the number of elements in the list */
 
 	if (h == NULL)
 		return (0);
