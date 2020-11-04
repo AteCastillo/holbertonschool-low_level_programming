@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - check the code for Holberton School students.
+ * add_nodeint_end - check the code for Holberton School students.
  * @head: pointer received
  * @n: int received
  * Return: an interger.
@@ -17,18 +17,20 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (newtail == NULL)
 		return (NULL);
 
-	if (*head == NULL)
-	{
-		*head = newtail;
-		return (newtail);
-	}
 	newtail->n = n;
 	newtail->next = NULL;
+
+	if (*head == NULL)
+        {
+                *head = newtail;
+                return (newtail);
+        }
+
 	while (auxiliar->next)
 	{
 		auxiliar = auxiliar->next;
 	}
 	auxiliar->next = newtail;
-	newtail = *head;
+
 	return (newtail);
 }

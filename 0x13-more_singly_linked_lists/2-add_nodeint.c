@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * list_len - check the code for Holberton School students.
- * @h: pointer to pointer to the list's head
+ * add_nodeint - check the code for Holberton School students.
+ * @head: pointer to pointer to the list's head
  * @n: interger received
  * Return: Always 0.
  */
@@ -17,11 +17,11 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	newhead = malloc(sizeof(listint_t));
 	if (newhead == NULL)
-		return(NULL);
+		return (NULL);
 
 
 	newhead->n = n;
-	newhead->next=	*head;
+	newhead->next =	*head;
 	*head = newhead;
 	return (newhead);
 }

@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - check the code for Holberton School students.
+ * listint_len - check the code for Holberton School students.
  * @h: pointer to the head's list
  * Return: an unsined int.
  */
@@ -14,9 +14,8 @@ size_t listint_len(const listint_t *h)
 		return (0);
 	while (h)
 	{
-		h = h->next;
 		count++;
+		h = h->next;
 	}
 	return (count);
-
 }
