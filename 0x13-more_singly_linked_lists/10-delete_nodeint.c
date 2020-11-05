@@ -1,8 +1,9 @@
 #include "lists.h"
 
 /**
- * pop_listint - check the code for Holberton School students.
+ * delete_nodeint_at_index - check the code for Holberton School students.
  * @head: pointer to pointer
+ * @index: index
  * Return: an interger.
  */
 
