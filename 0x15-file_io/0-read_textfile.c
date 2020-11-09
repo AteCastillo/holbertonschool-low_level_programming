@@ -3,12 +3,12 @@
 /**
  * read_textfile - check the code for Holberton School students.
  * @filename: pointer to char
- * @letter: int received
+ * @letters: int received
  * Return: Always 0.
  */
 
 
- ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, wtr, count; /*fd = file descriptor */
 
@@ -22,7 +22,7 @@
 	if (fd == -1)
 		return (0);
 
-	count = read(fd, buffer, letters);
+	count = read(fd, buffer, letters); /*fd calls the open function*/
 
 	wtr = write(STDOUT_FILENO, buffer, count);
 	if (wtr == -1)
@@ -30,5 +30,5 @@
 
 	close(fd);
 	free(buffer);
-	return(wtr);
+	return (wtr);
 }
