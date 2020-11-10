@@ -13,7 +13,7 @@ int main(int argc, char *av[])
 
 	buffer = malloc(sizeof(char) * 1024);
 	if (argc != 3)
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to"), exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	f_from = open(av[1], O_RDONLY);
 	if (f_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
