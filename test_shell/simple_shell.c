@@ -32,12 +32,11 @@ int main(void)
 				free(buffer);
 				free(argv);
 				write(1, "\n", 1);
-				return (1);
+				return (1); /*instead of returning here I can use a break and only the last return*/
 			}
 			perror("error");
 			free(buffer);
 			free(argv);
-
 			return(1);
 		}
 		for (i = 0; buffer[i] != 0; i++)
@@ -76,5 +75,9 @@ int main(void)
 	}
 	free(argv);
 	free(buffer);
+	for (i = 0; i < 1024; i++)
+	{
+		free(argv[i]);
+	}
 	return (0);
 }
