@@ -1,16 +1,18 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
+ * insert_dnodeint_at_index - insert new node
+ * @h: doble pointer received
+ * @n: int received
+ * @idx: int received
+ * Return: node.
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *newnode = NULL;
-	unsigned int i ;
-	dlistint_t *tmp = *h, *prev = NULL ;
+	unsigned int i;
+	dlistint_t *tmp = *h, *prev = NULL;
 
 	if (h == NULL || idx == 0)
 	{
