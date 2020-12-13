@@ -25,8 +25,9 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	tmp = *head;
 	newnode->n = n;
-	tmp->prev = newnode->next;
+	newnode->prev = NULL;
 	newnode->next = tmp;
+	tmp->prev = newnode;
 	*head = newnode;
 	return (newnode);
 }
