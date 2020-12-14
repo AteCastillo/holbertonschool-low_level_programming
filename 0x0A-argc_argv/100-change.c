@@ -13,36 +13,13 @@
 int main(int argc, char *argv[])
 {
 	int coins[] = {25, 10, 5, 2, 1};
-	int i;
-	int money_left;
-	int coins_num;
+	int i, count;
 
-
-	if (argc != 2)
+	for (i = 0; i < count; i++)
 	{
-		printf("Error\n");
-		return (1);
+		while (n >= count)
+			count++;
 	}
-	if (*argv[1] < 0)
-	{
-		printf("0\n");
-		return (1);
-	}
-
-	money_left = atoi(argv[1]);
-	i = 0;
-	coins_num = 0;
-
-	while (i < 5)
-	{
-		if (money_left % coins[i] == 0 && money_left != 0)
-		{
-			money_left -= coins[i];
-			coins_num += 1;
-			continue;
-		}
-		i++;
-	}
-	printf("%d\n", coins_num);
+	printf("%d", count)
 	return (0);
 }
