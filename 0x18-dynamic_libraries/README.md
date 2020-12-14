@@ -1,10 +1,20 @@
-# Tasks
+# General
+What is a dynamic library, how does it work, how to create one, and how to use it
+What is the environment variable $LD_LIBRARY_PATH and how to use it
+What are the differences between static and shared libraries
+Basic usage nm, ldd, ldconfig
+
+## Tasks
 0. A library is not a luxury but one of the necessities of life mandatory
 Create the dynamic library libholberton.so containing all the functions listed below:
 int _putchar(char c);
+
 int _islower(int c);
+
 int _isalpha(int c);
+
 int _abs(int n);
+
 int _isupper(int c);
 int _isdigit(int c);
 int _strlen(char *s);
@@ -27,7 +37,6 @@ Don’t forget to push your holberton.h file in your repository, containing at l
 Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
 2. Either write something worth reading or do something worth writing mandatory
 Write a blog post describing the differences between static and dynamic libraries. It should cover:
-
 Why using libraries in general
 How do they work
 How to create them (Linux only)
