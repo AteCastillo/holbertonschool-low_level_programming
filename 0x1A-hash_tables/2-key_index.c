@@ -12,6 +12,7 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 	unsigned long int hash = 0, index = 0;
 
 	hash = hash_djb2(key);
+	/*to know the index apply the module to the index received in hash*/
 	index = hash % size;
 	return (index);
 }

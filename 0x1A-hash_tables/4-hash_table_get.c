@@ -15,15 +15,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	index = key_index((const unsigned char *)key, ht->size);
-
+	/* if index is greater that array's size */
 	if (index >= ht->size)
 		return (NULL);
-
+	/* if and index in the array is no null */
 	if (ht->array[index] != NULL)
 	{
 		temp = ht->array[index];
 		while (temp != NULL)
 		{
+			/* compare key to check for collision */
 			if (strcmp(key, temp->key) == 0)
 				return (temp->value);
 			temp = temp->next;
