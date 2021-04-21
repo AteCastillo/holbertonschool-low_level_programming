@@ -30,26 +30,23 @@ int int_search_aux(int *arr, int start, int end, size_t size, int value)
 {
 	size_t pos;
 
-	pos = start + (((double)(end - start) / (arr[end] - arr[start]))
-	      * (value - arr[start]));
+	pos = start + (((double)(end - start) / (arr[end] - arr[start])) *
+		       (value - arr[start]));
 
 	if (pos > size)
 	{
-		printf("Value checked arr[%ld] is out of range\n", pos);
+		printf("Value checked array[%ld] is out of range\n", pos);
 		return (-1);
 	}
-	printf("Value checked arr[%ld] = [%d]\n", pos, arr[pos]);
-	if (arr[start] == value)
-		return (start);
-	if (arr[end] == value)
-		return (end);
-	if (size == 1 && arr[start] != value)
-		return (-1);
+	else
+		printf("Value checked array[%ld] = [%d]\n", pos, arr[pos]);
 
-	if (arr[pos] < value)
-		return (int_search_aux(arr, pos + 1, end, end - pos, value));
+	if (arr[pos] == value)
+		return (pos);
 	if (arr[pos] > value)
 		return (int_search_aux(arr, start, pos - 1, end - start, value));
+	if (arr[pos] < value)
+		return (int_search_aux(arr, pos + 1, end, end - pos, value));
 
 	return (-1);
 }
