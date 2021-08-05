@@ -1,6 +1,17 @@
-DATA STRUCTURES
+# 0x12. C - Singly linked lists
 
+## Resources:books:
+* [Linked lists](https://www.youtube.com/watch?v=udapt4FGY20&t=130s)
+* [In Youtube](https://www.youtube.com/results?search_query=linked+lists)
+
+## Learning objectives:bulb:
+
+*    When and why using linked lists vs arrays
+*    How to build and use linked lists
+
+## Tasks:
 Please use this data structure for this project:
+```
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -16,7 +27,8 @@ typedef struct list_s
     unsigned int len;
     struct list_s *next;
 } list_t;
-
+```
+```
 0. Write a function that prints all the elements of a list_t list.
 Prototype: size_t print_list(const list_t *h);
 Return: the number of nodes
@@ -40,3 +52,4 @@ followed by a new line.
 You are only allowed to use the printf function
 You are not allowed to use interrupts
 Your program will be compiled using nasm and gcc:
+```
