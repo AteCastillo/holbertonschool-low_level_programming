@@ -1,3 +1,20 @@
+# 0x0F. C - Function pointers
+## Resources :books:
+* [Function Pointer in C](https://www.geeksforgeeks.org/function-pointer-in-c/)
+* [Pointers to functions](https://www.geeksforgeeks.org/function-pointer-in-c/)
+* [Function poninters in C and C++](https://www.youtube.com/watch?v=ynYtgGUNelE)
+* [Why pointers to functions](https://www.youtube.com/watch?v=sxTFSDAZM8s)
+* [Everything you need to know about pointers in C](https://boredzo.org/pointers/)
+
+## Learning objectives:bulb:
+
+*    What are function pointers and how to use them
+*    What does a function pointer exactly hold
+*    Where does a function pointer point to in the virtual memory
+
+
+## Tasks:
+```
 0. Write a function that prints a name.
 Prototype: void print_name(char *name, void (*f)(char *));
 1. Write a function that executes a function given as a parameter on each
@@ -70,3 +87,4 @@ from the main function
 You have to use atoi to convert arguments to int
 You are not allowed to use any kind of loop
 You are allowed to use a maximum of 3 if statements
+```
