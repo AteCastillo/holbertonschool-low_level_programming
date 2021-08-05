@@ -1,4 +1,15 @@
+# 0x17. C - Doubly linked lists
+## Resources:books:
+* [What is a doble linked list](https://www.youtube.com/watch?v=k0pjD12bzP0)
+
+## Learning objectives:bulb:
+
+*    What is a doubly linked list
+*    How to use doubly linked lists
+*    Start to look for the right source of information without too much help
+
 # Tasks
+```
 0. Print list mandatory
 Write a function that prints all the elements of a dlistint_t list.
 Prototype: size_t print_dlistint(const dlistint_t *h);
@@ -66,3 +77,4 @@ Usage of the crackme: ./crackme5 username key
 The crackme will segfault if you do not enter the correct key for the user
 Usage for your keygen: ./keygen5 username
 Your keygen should print a valid key for the username
+```
